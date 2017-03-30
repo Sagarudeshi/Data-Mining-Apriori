@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <children>
+      <BorderPane>
+         <top>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="support" text="Enter Minimum Support : ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="isupport" />
+                  <Label fx:id="confidence" layoutX="10.0" layoutY="10.0" text="Enter Minimum Confidence : ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="iconfidence" layoutX="334.0" layoutY="10.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="choice" layoutX="707.0" layoutY="10.0" text="Enter Database file with extension : ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="ichoice" layoutX="1110.0" layoutY="10.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#onClickButton" text="Generate association rules" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="400.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="InputLabel" text="Transactions :">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="InputArea" editable="false" prefHeight="500.0" prefWidth="400.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </TextArea>
+                  <Region fx:id="region" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="OutputLabel" text="Association Rules :">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="OutputArea" editable="false" layoutX="220.0" layoutY="20.0" prefHeight="500.0" prefWidth="400.0">
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

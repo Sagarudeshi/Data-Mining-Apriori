@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="1500" maxWidth="1500" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1500.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <children>
+      <Label fx:id="support" layoutX="66.0" layoutY="72.0" text="Enter Minimum Support :" />
+      <Label fx:id="confidence" layoutX="66.0" layoutY="154.0" text="Enter Minimum Confidence :" />
+      
+      <TextField fx:id="isupport" layoutX="462.0" layoutY="62.0" />
+      <TextField fx:id="iconfidence" layoutX="462.0" layoutY="144.0" />
+      <ChoiceBox fx:id="ichoice" layoutX="460.0" layoutY="229.0" prefHeight="65.0" prefWidth="376.0" />
+      <Label fx:id="choice" layoutX="66.0" layoutY="239.0" text="Choose the database :" />
+      <Button fx:id="button" layoutX="477.0" layoutY="350.0" mnemonicParsing="false" onAction="#onClickButton" text="Get Association Rules" />
+      <Label fx:id="InputLabel" layoutX="253.0" layoutY="526.0" text="Input Transactions" />
+      <Label fx:id="OutputLabel" layoutX="998.0" layoutY="526.0" text="Association Rules" />
+      <TextArea fx:id="InputArea" layoutX="8.0" layoutY="572.0" prefHeight="915.0" prefWidth="698.0" />
+      <Separator layoutX="747.0" layoutY="562.0" orientation="VERTICAL" prefHeight="939.0" prefWidth="0.0" />
+      <TextArea fx:id="OutputArea" layoutX="801.0" layoutY="572.0" prefHeight="915.0" prefWidth="687.0" />
+   </children>
+</Pane>
